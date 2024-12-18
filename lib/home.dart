@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_counter/other.dart';
 
 import 'count_controller.dart';
 
@@ -24,6 +25,7 @@ class Home extends StatelessWidget {
           CupertinoIcons.plus,
         ),
       ),
+      body: Center(child: ElevatedButton(onPressed: () => Get.to(Other(),), child: Text('Go to Other'),),),
     );
   }
 }
