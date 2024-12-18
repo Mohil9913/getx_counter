@@ -7,7 +7,9 @@ class Other extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final CountController c = Get.find();
+
     return Scaffold(
       body: Center(
         child: Text(
