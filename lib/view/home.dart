@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'count_controller.dart';
+import '../controller/count_controller.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

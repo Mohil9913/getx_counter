@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:getx_counter/home.dart';
+import 'package:getx_counter/view/home.dart';
 
 
 void main() {

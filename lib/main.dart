@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_counter/other.dart';
-import 'home.dart';
+import 'package:getx_counter/service/api_service.dart';
+import 'package:getx_counter/view/other.dart';
+import 'view/home.dart';
 
-void main() => runApp(
-      GetMaterialApp(
+void main() {
 
-        getPages: [GetPage(name: '/other', page: () => Other())],
+  Get.lazyPut<ApiService>(() => ApiService());
 
-        home: Home(),
-      ),
-    );
+  runApp(
+    GetMaterialApp(
+      getPages: [GetPage(name: '/other', page: () => Other())],
+      home: Home(),
+    ),
+  );
+}
